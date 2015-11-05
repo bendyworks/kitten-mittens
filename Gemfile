@@ -45,6 +45,8 @@ group :development do
   gem 'spring'
 
   gem 'brakeman', require: false
+
+  gem 'pry-rails'
 end
 
 
