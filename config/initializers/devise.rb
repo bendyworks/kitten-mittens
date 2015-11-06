@@ -1,4 +1,3 @@
-require 'dotenv'
 Devise.secret_key = ENV['DEVISE_SECRET_KEY']
 
 Devise.setup do |config|
