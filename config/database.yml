@@ -5,13 +5,14 @@
 #   gem 'sqlite3'
 #
 default: &default
-  adapter: sqlite3
+  adapter: postgresql
   pool: 5
   timeout: 5000
+  username: brad
 
 development:
   <<: *default
-  database: db/development.sqlite3
+  database: kitten_mittens_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -19,7 +20,8 @@ development:
 test:
   <<: *default
   database: db/test.sqlite3
+  database: kitten_mittens_test
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  database: kitten_mittens_production

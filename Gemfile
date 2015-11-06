@@ -35,7 +35,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem 'sqlite3'
 end
 
 group :development do
@@ -60,6 +59,4 @@ gem 'dotenv'
 # Tighten security
 gem 'activerecord-session_store'
 
-group :production do
-  gem 'pg'
-end
+gem 'pg'
