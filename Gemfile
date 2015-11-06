@@ -60,3 +60,8 @@ gem 'dotenv'
 gem 'activerecord-session_store'
 
 gem 'pg'
+
+group :production do
+  gem 'rollbar', '~> 2.4.0'
+  gem 'oj', '~> 2.12.14'
+end
