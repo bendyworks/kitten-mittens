@@ -35,6 +35,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'dotenv-rails'
 end
 
 group :development do
@@ -53,15 +54,12 @@ end
 gem 'spree', '3.0.4'
 gem 'spree_gateway', github: 'spree/spree_gateway', branch: '3-0-stable'
 gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '3-0-stable'
-
-gem 'dotenv'
+gem 'deface', github: 'spree/deface'
 
 # Tighten security
 gem 'activerecord-session_store'
 
 gem 'pg'
 
-group :production do
-  gem 'rollbar', '~> 2.4.0'
-  gem 'oj', '~> 2.12.14'
-end
+gem 'rollbar', '~> 2.4.0'
+gem 'oj', '~> 2.12.14'
